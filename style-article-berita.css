@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --oren: rgb(255, 81, 0);
+    --gani: rgb(0, 0, 0);
+    --ooraa: rgb(255, 0, 0);
+    --amba-abuabu: rgb(68, 68, 68);
+    --templat: rgb(214, 214, 214);
+    --shai-shain: rgb(255, 255, 255);
+    --shai-trans: rgba(255, 255, 255, 0.623);
+    --width:1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--templat);
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: var(--shai-shain);
+    background-color: var(--gani);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo h3 {
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo img {
+    width: 2.5rem;
+    padding: 0.5rem;
+}
+
+.header-nav h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.5rem;
+}
+
+.btn-footer {
+    display: flex;
+    align-items: center;
+}
+
+.btn-footer p a {
+    background-color: var(--ooraa);
+    color: var(--shai-shain);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.bottem-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0 1rem 0;
+    background-color: var(--templat);
+}
+
+.bottem-header .hijau, .biasa p {
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.bottem-header .hijau p {
+    color: rgba(179, 72, 0, 0.685);
+}
+
+header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+header p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.692);
+    margin: 1rem;
+}
+
+
+section .img-gambar img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.692);
+    height: 30rem;
+    width: 65%;
+    background-size: cover;
+    display: flex;
+    margin: 1rem auto;
+}
+
+main {
+    background-color: var(--templat);
+    margin: auto;
+}
+
+.container-text, .container-teks {
+    padding: 0 10%;
+    margin-bottom: 3rem;
+}
+
+.h2, p {
+    margin: 0.5rem;
+}
+
+ol li ul li {
+    margin: 0.2rem 0 0.5rem 0.2rem;
+    list-style-type: none;
+}
+
+.unordet-list {
+    padding: 1rem 0 0 3rem;
+} 
+
+article .text {
+    text-align: justify;
+}
+
+article h2 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-teks .img-gambar img {
+    margin: 2rem auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container-teks .h2 {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgb(97, 97, 97);
+}
+
+.p-akhir {
+    margin-top: 2rem;
+}
+
+.Overlow h2 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid var(--templat);
+}   
+
+.card-ard img {
+    width: 18rem;
+    border-radius: 10px;
+    max-height: 10rem;
+}
+
+
+.flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 15.5rem;
+    padding-bottom: 2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+}
+
+.flow a {
+    text-decoration: none;
+}
+
+.Overlow {
+    background-color: var(--shai-shain);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.692);
+    padding: 2rem 3rem;
+    border-bottom: solid var(--templat) 5px;
+}
+
+.card {
+    margin: 1rem 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);  
+    transition: 0.3s ease; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card:hover {
+    margin: 1rem 0.5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);   
+    transform: scale(1.01);
+}
+
+.card-article {
+    height: 30%;
+    padding-bottom: 5px;
+    margin: 0.5rem;
+} 
+
+.card-article h3, .card-article p {
+    margin: 0.5rem 0;
+} 
+
+.card-article h3 {
+    color: var(--gani);
+} 
+
+.card-article p {
+    color: rgba(0, 0, 0, 0.692);
+} 
+
+.logo-RPL img {
+    width: 2.5rem;
+}
+
+.logo-Xsata img {
+    width: 2.5rem;
+}
+
+.kotak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-left: 7rem;
+}
+
+.judul h2, .judul .logo-RPL, .judul .logo-Xsata, .footer-nav {
+    margin-left: 5rem;
+    margin: 1rem;
+}
+
+.kotak .judul {
+    padding: 1.8rem 0 0 0;
+}
+
+.kotak .judul h3 {
+    color: var(--shai-shain);
+}
+
+.judul .logo-RPL, .logo-Xsata {
+    display: flex;
+    align-items: center;
+}
+
+.judul .logo-RPL p, .logo-Xsata p {
+    margin-left: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-container {
+    padding: 2rem;
+    background-color: rgb(24, 24, 24);
+
+}
+
+.footer-nav h3 {
+    margin: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-nav p {
+    margin: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-end p {
+    margin: 1rem;
+    color: var(--shai-trans);
+}
+
+.footer-end {
+    background-color: var(--gani);
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    left: -0.01rem;
+}
+
+.footer-end p {
+    text-align: center;
+    margin-top: 7px;
+}

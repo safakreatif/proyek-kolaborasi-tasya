@@ -1,0 +1,476 @@
+:root {
+    --oren: rgb(255, 81, 0);
+    --gani: rgb(0, 0, 0);
+    --ooraa: rgb(255, 0, 0);
+    --amba-abuabu: rgb(68, 68, 68);
+    --templat: rgb(214, 214, 214);
+    --shai-shain: rgb(255, 255, 255);
+    --shai-trans: rgba(255, 255, 255, 0.623);
+    --width:1200px;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    color: var(--shai-shain);
+    z-index: 1000;
+    background-color: var(--gani);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    min-height: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+}
+
+.logo h3 {
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo img {
+    max-width: 2.5rem;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    left: 1.5rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--shai-shain);
+}
+
+.btn-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 5rem;
+    min-height: 3.5rem;
+    margin-left: auto;
+}
+
+.btn-footer p a {
+    background-color: var(--ooraa);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--shai-shain);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.warna-kuning {
+    color: var(--oren);
+    padding-right: 5px;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.5rem;
+    color: var(--templat);
+}
+
+.background {
+    background-color: var(--templat);
+    padding-bottom: 2rem;
+
+}
+
+.bottem-header p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gani);
+}
+
+.section-container {
+    display: flex;
+    max-width: var(--width);
+    margin: auto;
+}
+
+.section-container .konten-utama {
+    max-width: 50%;
+    max-height: 33rem;
+    padding: 3rem;
+    transition: 0.3s ease;
+}
+
+.section-container .konten-utama figure {
+    position: relative;
+}
+
+.section-container .konten-utama figure img {
+    max-width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.section-container .konten-utama figure .transparan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: var(--shai-trans);
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.section-container .konten-utama figure .transparan:hover {
+    opacity: 1;
+}
+
+.section-container .konten-utama h1 {
+    font-size: 2rem;
+    max-width: 25rem;
+}
+
+.konten-utama .mini {
+    margin: 0 0 0.7rem 0;
+}
+
+figcaption {
+    margin: 1rem;
+}
+
+.tanda {
+    display: flex;
+}
+
+.konten-kedua {
+    min-width: 50%;
+}
+
+.konten-kedua .container-card .card-article .article {
+    width: 15rem;
+    
+}
+
+.container-card .card-article .judul h4 {
+    font-size: 1.2rem;
+    line-height: 18px;
+}
+
+.container-card .card-article .judul {
+    padding: 6px 0;
+}
+
+.container-card .card-article .article {
+    font-size: 0.9rem;
+}
+
+.container-card .card-article .tanda {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+}
+
+.konten-kedua .container-card {
+    display: flex;
+    padding-left: 5rem;
+    margin-top: 0.5rem;
+
+}
+
+.konten-kedua .card  {
+    margin-top: 6rem;
+}
+
+.card-img img {
+    border-radius: 10px;
+    max-width: 15.2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    position: relative;
+    
+}
+
+.card-img .transparan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--shai-trans);
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card-img .transparan:hover {
+    opacity: 1;
+}
+
+.img-bwh1, .img-bwh2 {
+    padding: 4.15%;
+    box-sizing: border-box;
+}
+
+.img-bwh1 .img {
+    width: 35rem;
+    background-image: linear-gradient(
+        to top,
+         rgba(0, 0, 0, 0.9),
+          transparent),
+    url(Sriwijaya/09e41de6-19ef-4dad-8683-39b25961e973.jpg);
+    background-size: 40rem;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.img-bwh1 .img .transparan {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--shai-trans);
+    font-size: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.img-bwh1 .img .transparan:hover {
+    opacity: 1;
+}
+
+.img-bwh2 .img {
+    width: 35rem;
+    background-image: linear-gradient(
+        to top,
+         rgba(0, 0, 0, 0.9),
+          transparent),
+    url(Pajajaran/Sejarah\ Kerajaan\ Pajajaran.jpg);
+    background-size: 40rem;
+    height: 25rem;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.img-bwh2 .img .transparan {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--shai-trans);
+    font-size: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.img-bwh2 .img .transparan:hover {
+    opacity: 1;
+}
+
+
+.img-bwh1 .img .atas, .img-bwh2 .img .atas {
+    color: var(--shai-trans);
+    margin-top: 19rem;    
+    padding-bottom: 10px;
+}
+
+.img-bwh1 .img .bawah, .img-bwh2 .img .bawah {
+    color: var(--shai-shain);
+}
+
+.container-plus {
+    display: flex;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 248, 226);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-RPL img {
+    width: 2.5rem;
+}
+
+.logo-Xsata img {
+    width: 2.5rem;
+}
+
+.kotak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.judul h2, .judul .logo-RPL, .judul .logo-Xsata, .footer-nav {
+    margin-left: 5rem;
+    margin: 1rem;
+}
+
+.kotak .judul {
+    padding: 1.8rem 0 0 0;
+}
+
+.kotak .judul h3 {
+    color: var(--shai-shain);
+}
+
+.judul .logo-RPL, .logo-Xsata {
+    display: flex;
+    align-items: center;
+}
+
+.judul .logo-RPL p, .logo-Xsata p {
+    margin-left: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-container {
+    padding: 2rem;
+    background-color: rgb(24, 24, 24);
+
+}
+
+.footer-nav h3 {
+    margin: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-nav p {
+    margin: 1rem;
+    color: var(--shai-shain);
+}
+
+.footer-end p {
+    margin: 1rem;
+    color: var(--shai-trans);
+}
+
+.footer-end {
+    background-color: var(--gani);
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    left: -0.01rem;
+}
+
+.footer-end p {
+    text-align: center;
+    margin-top: 7px;
+}
+
+@media (max-width: 1090px) {
+    header {
+    min-height: 3.5rem;
+
+    }
+
+    nav ul {
+        width: 0;
+        font-size: 0ch;
+
+    }
+
+    .btn-footer {
+        position: static;
+        padding-left: 0;
+
+    }
+
+    .btn-footer {
+        min-height: 3rem;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-plus {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .konten-kedua .container-card {
+    padding-left: 1rem;
+    }
+
+    .kotak {
+        gap: 2rem;
+    }
+
+    .konten-kedua, .card-article  {
+        width: 80%;
+    }
+
+    .container-card {
+        margin-left: 5rem;
+        display: flex;
+    }
+}

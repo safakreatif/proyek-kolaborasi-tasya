@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+}
+body {
+    background-image: url(Kalingga/21007350253_7a94c874de_b.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.daftar-container {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    width: 350px;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 50px;
+    box-shadow: 0 0 9px;
+}
+
+.judul {
+    text-align: center;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.form1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+}
+
+.form2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form3 {
+    padding: 15px 40px;
+    width: 130px;
+    height: 3px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0.1px solid rgba(0, 0, 0, 0.418);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.form3:hover {
+    transform: scale(1.01);
+    color: aliceblue;
+    background-color: black;
+}
+
+.button7 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+}
+
+input {
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.521);
+    height: 27px;
+    padding-left: 8px;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    min-height: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+}
+
+.logo h3 {
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo img {
+    max-width: 2.5rem;
+    padding: 0.5rem;
+}
+
+.login h2 {
+    text-align: center;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--shai-shain);
+}
+
+.btn-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 5rem;
+    min-height: 3.5rem;
+    margin-left: auto;
+}
+
+.btn-footer p a {
+    background-color: var(--ooraa);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--shai-shain);
+    text-decoration: none;
+    background-color: var(--ooraa);
+    padding: 8px;
+}
+
